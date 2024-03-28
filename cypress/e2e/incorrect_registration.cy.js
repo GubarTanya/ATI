@@ -9,7 +9,7 @@ describe('Cypress Test',() => {
 
           cy.log('Ввод логина')
           cy.get(':nth-child(1) > :nth-child(1) > .form-control--medium > .form-input--text')
-            .type(data.login_registration)
+            .type(data.login)
 
           cy.log('Ввод email')
           cy.get('input[class="form-input--email form-input"]')
@@ -21,7 +21,7 @@ describe('Cypress Test',() => {
 
           cy.log('Ввод пароля')
           cy.get('div[class="registration-form__label"]:nth-child(4)').find('input[autocomplete="new-password"]')
-            .type(data.password)
+            .type(data.not_password)
 
           cy.log('Клик по кнопке "Войти')
           cy.get('.form__buttons > :nth-child(4)') 
